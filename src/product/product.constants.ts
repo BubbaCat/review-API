@@ -1,0 +1,1 @@
+const PRODUCT_NOT_FOUND_ERROR = "Пользователь не был найден";
