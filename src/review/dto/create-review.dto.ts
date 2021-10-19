@@ -1,7 +1,21 @@
+import { IsNumber,IsString, Max, Min } from 'class-validator';
+
 export class createReviewDto{
+	
+	@IsString()
 	name:string;
-	titile:string;
+
+	@IsString()
+	title:string;
+
+	@IsString()
 	description:string;
+
+	@Max(5)
+	@Min(1,{message:'Рейтинг не может быть менее 1'})
+	@IsNumber()
 	rating:number;
-	prdocutId:string;
+
+	@IsString()
+	productId:string;
 }

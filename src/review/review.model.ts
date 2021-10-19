@@ -18,6 +18,6 @@ export class ReviewModel extends TimeStamps{
 	rating:number;
 
 	@prop()
-	prdocutId:Types.ObjectId;
+	productId:Types.ObjectId;
 }
 
